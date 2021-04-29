@@ -173,13 +173,13 @@ async def playlist(client, message):
 def updated_stats(chat, queue, vol=100):
     if chat.id in callsmusic.pytgcalls.active_calls:
     #if chat.id in active_chats:
-        stats = 'Settings of **{}**'.format(chat.title)
+        stats = 'සැකසුම් **{}**'.format(chat.title)
         if len(que) > 0:
             stats += '\n\n'
-            stats += 'Volume : {}%\n'.format(vol)
-            stats += 'Songs in queue : `{}`\n'.format(len(que))
-            stats += 'Now Playing : **{}**\n'.format(queue[0][0])
-            stats += 'Requested by : {}'.format(queue[0][1].mention)
+            stats += 'පරිමාව : {}%\n'.format(vol)
+            stats += 'පෝලිම්වල ගීත  : `{}`\n'.format(len(que))
+            stats += 'දැන් වාදනය වන්නේ : **{}**\n'.format(queue[0][0])
+            stats += 'විසින් ඉල්ලා ඇත : {}'.format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -203,7 +203,7 @@ def r_ply(type_):
                 
             ],
             [       
-                InlineKeyboardButton("❌ Close",'cls')
+                InlineKeyboardButton("❌ වසන්න",'cls')
             ]        
         ]
     )
@@ -454,7 +454,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @DaisyXmusic to your Group and try again</b>",
+                                  "\n\nOr manually add @SL_PUNSITH1 to your Group and try again</b>",
                               )
                               pass
     try:
@@ -551,7 +551,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} via DaisyXmusic 😜".format(
+        caption="▶️ **Playing** here the song requested by {} via Godzilla Music Bot 😍😜".format(
         message.from_user.mention()
         ),
     )
