@@ -31,7 +31,7 @@ async def inline(client: Client, query: InlineQuery):
                     input_message_content=InputTextMessageContent(
                         "https://www.youtube.com/watch?v={}".format(
                             result["id"]
-                        )   
+                        )
                     ),
                     thumb_url=result["thumbnails"][0]["url"]
                 )
