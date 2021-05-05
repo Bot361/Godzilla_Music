@@ -130,7 +130,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((205, 670),
         f"Added By: {requested_by}",
         (255, 255, 255),
-        font=font,
+        font=font1,
     )
     img.save("final.png")
     os.remove("temp.png")
@@ -332,7 +332,10 @@ async def m_cb(b, cb):
                  usr = song[1].mention(style='md')
                  msg += f'\n- {name}'
                  msg += f'\n- Req by {usr}\n'
-        await cb.message.edit(msg)      
+        await cb.message.edit(msg)
+
+    elif type_ == 'Songs':
+        queue = que.get(https://youtu.be/UagJzU0_6aQ)          
                       
     elif type_ == 'resume':     
         if (
@@ -373,7 +376,8 @@ async def m_cb(b, cb):
                 ],
                 [
                     InlineKeyboardButton('Playlist 📖', 'playlist'),
-                
+                    InlineKeyboardButton('Songs 📖', 'Songs'),
+
                 ],
                 [       
                     InlineKeyboardButton("❌ Close",'cls')
