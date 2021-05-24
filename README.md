@@ -31,4 +31,4 @@
 
 Get pyrogram STRING_NAME from here:
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@Bot361/Generate-Telegram-String-Session)
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@subinps/getStringName)
