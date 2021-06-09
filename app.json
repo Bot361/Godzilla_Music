@@ -1,8 +1,8 @@
 {
-  "name": "Music Bot",
+  "name": "DaisyXMusic",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/ImJanindu/GroupMusicBot",
+  "repository": "https://github.com/TeamDaisyX/DaisyXMusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
@@ -13,15 +13,53 @@
       "description": "A bot token from @BotFather",
       "required": true
     },
+    "BOT_USERNAME": {
+      "description": "Your bot's username without @",
+      "required": true
+    },
     "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
       "value": ""
     },
+    "SUPPORT_GROUP": {
+      "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
+      "required": false,
+      "value": "DaisySupport_Official"
+    },
+    "PROJECT_NAME": {
+      "description": "Your MusicPlayer project Name.",
+      "required": false,
+      "value": "DaisyXMusic v4"
+    },
+    "ASSISTANT_NAME": {
+      "description": "Your MusicPlayer's assistant Username without @.",
+      "required": true
+    },
+    "ARQ_API_KEY": {
+      "description": "Get from @ARQRobot.",
+      "required": false,
+      "value": "VKSSQH-SRNJYZ-MSOJAI-QALESR-ARQ"
+    },    
+    "BG_IMAGE": {
+      "description": "BG image of bot (Use transparent one) [IGNORE].",
+      "required": false,
+      "value": " https://telegra.ph/file/dcfdf612e499eef0e0b1f.png"
+    },     
+    "UPDATES_CHANNEL": {
+      "description": "Updates Channel without @ [Leave this if you don't have one].",
+      "required": false,
+      "value": "DaisyXupdates"
+    },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
       "required": true
     },
+    "PMPERMIT": {
+      "description": "Change to turn off",
+      "required": false,
+      "value": "ENABLE"
+    },    
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
       "required": true
